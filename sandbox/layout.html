@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+      body {
+        height: 100vh;
+        margin: 0;
+        overflow: hidden;
+        font-family: Roboto, sans-serif;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .header {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        padding: 1rem;
+      }
+
+      .content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        flex: 1;
+      }
+
+      .footer {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        padding: 1rem;
+        background-color: #ddd;
+      }
+
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        gap: 1rem;
+      }
+
+      img {
+        width: 600px;
+      }
+
+      button {
+        font-family: Roboto, sans-serif;
+        border: none;
+        border-radius: 8px;
+        background: #eee;
+        padding: 0.5em;
+      }
+
+      input {
+        border: 1px solid #ddd;
+        border-radius: 16px;
+        padding: 8px 24px;
+        width: 400px;
+        margin-bottom: 16px;
+      }
+      a {
+        color: rgb(80, 80, 80);
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <ul class="left-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../index.html">Home</a></li>
+      </ul>
+      <ul class="right-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../index.html">Home</a></li>
+      </ul>
+    </div>
+
+    <div class="content">
+      <img
+        src="../images/odin.png"
+        alt="Project logo. Represents odin with the project name."
+      />
+      <div class="input">
+        <input type="text" />
+      </div>
+      <div class="buttons">
+        <button>Do the thing!</button>
+        <button>Do the other thing!</button>
+      </div>
+    </div>
+
+    <div class="footer">
+      <ul class="left-links">
+        <li><a href="#">Advertising</a></li>
+        <li><a href="#">Business</a></li>
+      </ul>
+      <ul class="right-links">
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+      </ul>
+    </div>
+  </body>
+</html>
